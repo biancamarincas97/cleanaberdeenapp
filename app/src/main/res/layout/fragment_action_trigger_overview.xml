@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BCFBD"
+    android:orientation="vertical"
+    tools:context=".ActionTriggerOverviewFragment">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="420dp"
+        android:layout_height="311dp"
+        android:src="@drawable/block_cta_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMapPollutefdSpots"
+        android:layout_width="412dp"
+        android:layout_height="408dp"
+        android:src="@drawable/map_done"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMarkAsClean"
+        android:layout_width="230dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="#f9b4ab"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/btnMarkAsClean"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPollutedSpot" />
+
+    <Button
+        android:id="@+id/btnAddPollutedSpot"
+        android:layout_width="260dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFD761"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/btnAddPollutedSpot"
+        android:textColor="#383F3D "
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMapPollutefdSpots" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

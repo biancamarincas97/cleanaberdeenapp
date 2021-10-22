@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBD4CE"
+    android:foregroundGravity="top"
+    tools:context=".PollutionDetailsFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/another_block"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddPhoto"
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#264e70"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/btnAddPhoto"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelPhotoAddition" />
+
+    <TextView
+        android:id="@+id/tvLabelPhotoAddition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/cambay"
+        android:labelFor="@id/btnAddPhoto"
+        android:text="@string/tvLabelPhotoAddition"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMultilineDescription"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:editable="false"
+        android:ems="10"
+        android:fontFamily="@font/cambay"
+        android:gravity="bottom"
+        android:hint="@string/etMultilineDescription"
+        android:inputType="textLongMessage|textMultiLine"
+        android:lineSpacingExtra="8sp"
+        android:minHeight="48dp"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#717C80"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelDescription"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvLabelDescription"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/cambay"
+        android:labelFor="@id/etMultilineDescription"
+        android:text="@string/tvLabelDescription"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPhoto" />
+
+    <TextView
+        android:id="@+id/tvLabelLocationAddition"
+        android:layout_width="305dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/cambay"
+        android:labelFor="@id/btnAddPollutionLocation"
+        android:text="@string/tvLabelLocationAddition"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMultilineDescription" />
+
+    <Button
+        android:id="@+id/btnAddPollutionLocation"
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#264e70"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/btnAddPollutionLocation"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelLocationAddition" />
+
+    <Button
+        android:id="@+id/btnSubmitForm"
+        android:layout_width="197dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#FFD761"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/btnSubmitForm"
+        android:textColor="#523F3F"
+        android:textSize="22sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnTakeMeHome"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#FFD761"
+        android:cursorVisible="false"
+        android:fadingEdge="horizontal"
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="#383F3D"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/home"
+        app:iconPadding="2dp"
+        app:iconSize="25dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubmitForm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

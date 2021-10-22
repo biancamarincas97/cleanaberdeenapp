@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBD4CE"
+    tools:context=".ViewPollutedSpotFragment" >
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/third_block"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="336dp"
+        android:layout_height="344dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/thrash_feed_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWasteDescription"
+        android:layout_width="255dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cambay"
+        android:text="@string/tvWasteDescription"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btnMarkCleanPhoto"
+        android:layout_width="181dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#F9B4AB"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/btnAddPhoto"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWasteDescription" />
+
+    <Button
+        android:id="@+id/btnTakeMeHome"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#FFD761"
+        android:cursorVisible="false"
+        android:fadingEdge="horizontal"
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="#383F3D"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/home"
+        app:iconPadding="2dp"
+        app:iconSize="25dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMarkCleanPhoto"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

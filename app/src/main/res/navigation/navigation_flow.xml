@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_flow"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/actionTriggerOverviewFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.ActionTriggerOverviewFragment"
+        android:label="fragment_action_trigger_overview"
+        tools:layout="@layout/fragment_action_trigger_overview" >
+        <action
+            android:id="@+id/home_to_pollutionForm"
+            app:destination="@id/pollutionDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/home_to_pollutedSpot"
+            app:destination="@id/viewPollutedSpotFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/pollutionDetailsFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.PollutionDetailsFragment"
+        android:label="fragment_pollution_details"
+        tools:layout="@layout/fragment_pollution_details" >
+        <action
+            android:id="@+id/pollutionForm_to_wasteCamera"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/pollutionForm_to_locationSet"
+            app:destination="@id/setCurrentLocationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/pollutionForm_to_Success"
+            app:destination="@id/successfulFragment" />
+        <action
+            android:id="@+id/pollutionDetails_to_home"
+            app:destination="@id/actionTriggerOverviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/wasteCamera_to_pollutionForm"
+            app:destination="@id/pollutionDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/setCurrentLocationFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.SetCurrentLocationFragment"
+        android:label="fragment_set_current_location"
+        tools:layout="@layout/fragment_set_current_location" >
+        <action
+            android:id="@+id/locationSet_to_pollutionForm"
+            app:destination="@id/pollutionDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successfulFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.SuccessfulFragment"
+        android:label="fragment_successful"
+        tools:layout="@layout/fragment_successful" >
+        <action
+            android:id="@+id/success_to_home"
+            app:destination="@id/actionTriggerOverviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPollutedSpotFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.ViewPollutedSpotFragment"
+        android:label="fragment_view_polluted_spot"
+        tools:layout="@layout/fragment_view_polluted_spot" >
+        <action
+            android:id="@+id/pollutedSpot_to_cleanCamera"
+            app:destination="@id/cleanSceneryCameraFragment" />
+        <action
+            android:id="@+id/pollutedSpot_to_home"
+            app:destination="@id/actionTriggerOverviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cleanSceneryCameraFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.CleanSceneryCameraFragment"
+        android:label="fragment_clean_scenery_camera"
+        tools:layout="@layout/fragment_clean_scenery_camera" >
+        <action
+            android:id="@+id/cleanCamera_to_Success"
+            app:destination="@id/successfulFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="uk.ac.rgu.cleanaberdeenapp.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/welcome_to_home"
+            app:destination="@id/actionTriggerOverviewFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+</navigation>
